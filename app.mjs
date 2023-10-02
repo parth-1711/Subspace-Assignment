@@ -48,6 +48,10 @@ const Analyze = async () => {
 //memoizing the the analysis function
 const memoizedAnalysis=_.memoize(async () => await Analyze());
 
+app.get('/',(req,res)=>{
+  res.json({message:"Go to /api/blog-stats endpoint to get analysis OR go to /api/blog-search endpoint to search blogs through query parameters."})
+})
+
 //get route to get blog stats
 app.get("/api/blog-stats", async (req, res) => {
   try {
