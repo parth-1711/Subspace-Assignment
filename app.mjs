@@ -1,5 +1,8 @@
-const express = require("express");
-var _ = require("lodash");
+// const express = require("express");
+import express from 'express';
+import fetch from 'node-fetch';
+import _ from 'lodash';
+// var _ = require("lodash");
 
 const app = express();
 
